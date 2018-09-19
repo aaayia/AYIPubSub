@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AYIPubSub_Example' do
+  pod 'AYIPubSub', :path => '../'
+
+  target 'AYIPubSub_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
