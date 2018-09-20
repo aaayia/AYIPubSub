@@ -1,0 +1,16 @@
+PODS:
+  - AYIPubSub (0.1.0)
+
+DEPENDENCIES:
+  - AYIPubSub (from `../`)
+
+EXTERNAL SOURCES:
+  AYIPubSub:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AYIPubSub: fd198976e0f0b2ca3baea0945a6d96dc2d7a51f8
+
+PODFILE CHECKSUM: e14a564a8580a57f4544ab41960b04f9764fbda3
+
+COCOAPODS: 1.5.2

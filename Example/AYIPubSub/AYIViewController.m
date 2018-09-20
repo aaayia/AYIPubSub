@@ -7,6 +7,7 @@
 //
 
 #import "AYIViewController.h"
+#import "NSObject+AYIPubSub.h"
 
 @interface AYIViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [ self publish:@"viewDidLoad" withObject:@{@"view": self.view}];
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,12 +7,18 @@
 //
 
 #import "AYIAppDelegate.h"
+#import "NSObject+AYIPubSub.h"
+
 
 @implementation AYIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+       [self scribe:@"viewDidLoad" callback: ^(NSString *name, id object){
+           NSLog(@"收到通知---> %@ %@", name, object);
+       }];
     return YES;
 }
 

@@ -1,0 +1,6 @@
+framework module AYIPubSub {
+  umbrella header "AYIPubSub-umbrella.h"
+
+  export *
+  module * { export * }
+}

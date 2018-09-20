@@ -20,6 +20,21 @@ it, simply add the following line to your Podfile:
 pod 'AYIPubSub'
 ```
 
+## Code
+订阅事件
+
+```
+ [self scribe:@"viewDidLoad" callback: ^(NSString *name, id object){
+           NSLog(@"收到通知---> %@ %@", name, object);
+}];
+```
+推送事件
+
+```
+[self publish:@"viewDidLoad" withObject:@{@"view": self.view}];
+```
+
+
 ## Author
 
 aaayia, twilightzzy@126.com
@@ -27,3 +42,5 @@ aaayia, twilightzzy@126.com
 ## License
 
 AYIPubSub is available under the MIT license. See the LICENSE file for more info.
+
+
